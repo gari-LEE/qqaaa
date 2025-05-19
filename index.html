@@ -976,10 +976,10 @@
 
         // 관리자 로그인 상태 관리
         function isAdminLoggedIn() {
-            return localStorage.getItem('adminLoggedIn') === 'true';
+            return sessionStorage.getItem('adminLoggedIn') === 'true';
         }
         function setAdminLoggedIn(val) {
-            localStorage.setItem('adminLoggedIn', val ? 'true' : 'false');
+            sessionStorage.setItem('adminLoggedIn', val ? 'true' : 'false');
         }
         function renderAdminLogin() {
             const editTree = document.getElementById('editTree');
