@@ -211,16 +211,16 @@
         } else {
             disasterData = [
             {
-                id: "callSystem",
-                title: "콜시스템 장애",
-                    icon: "📞",
-                description: "교환기, 콜백, 녹취, 통계 시스템 관련 장애",
-                    subtypes: [
-                        {
-                            name: "인입, 콜백 장애",
-                scenarios: [
-                    {
-                        name: "주간 (09:00 ~ 18:00)",
+    "id": "callSystem",
+    "title": "콜시스템 장애",
+    "icon": "📞",
+    "description": "<b>교환기, 콜백, 녹취, 통계 시스템 관련 장애</b>",
+    "subtypes": [
+      {
+        "name": "인입, 콜백 장애",
+        "scenarios": [
+          {
+            "name": "주간 (09:00 ~ 18:00)",
             "action": "장애 발견자는 <b>① </b>쪽지 공유 및 담당자 유선 보고.<div><span style=\"font-size: 1em;\">수신 지휘자는 <b>⑦ </b>유지보수 업체(지엔텔) 연락 및 상황 전파.</span><div><span style=\"color: rgb(239, 68, 68);\"><b>전화인입 장애인 경우 수신 지휘차는 <b>④+⑥ </b>즉시 보고</b></span></div></div>",
             "contacts": [
               {
@@ -648,110 +648,578 @@
     "color": "#f9ddf4"
   },
   {
-     id: "otherSystems",
-     title: "자사 사용 (웹)시스템 장애",
-     icon: "⚙️",
-     description: "어드민, J-TiS, J-WITH, 비즈박스, Smart Work System 등",
-     subtypes: [
-                        {
-                            name: "자생위드/J-TIS/비즈박스 장애",
-                scenarios: [
-                    {
-                        name: "주간 (09:00 ~ 18:00)",
-                        action: "장애 발견자는 쪽지 공유 및 담당자 유선 보고. 수신 지휘자는 인재정보개발실 담당자에게 연락. 장애 복구 전까지 병의원 내선 또는 환자관리 전화상담 활용.",
-                        contacts: [
-                            { name: "이기민 프로", phone: "010-2972-1594", department: "인재정보개발실 인사지원팀", note: "1순위" },
-                            { name: "박종배 프로", phone: "010-9136-4042", department: "인재정보개발실 인사지원팀", note: "2순위" }
-                        ]
-                    },
-                    {
-                        name: "야간/휴일 (18:00 ~ 익일 09:00)",
-                        action: "장애 발견자는 카카오톡 단톡방 공유. 수신 지휘자는 사안에 따라 순차적 유선 연락.",
-                        contacts: [
-                            { name: "인재정보개발실 단톡방", phone: "카카오톡", department: "인재정보개발실", note: "장애 상황 공유 및 순차 연락 (이기민, 박종배 프로)" }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            name: "CS페이지(어드민)/ Smart Work System 장애",
-                            scenarios: [
-                                {
-                                    name: "주간 (09:00 ~ 18:00)",
-                                    action: "장애 발견자는 쪽지 공유 및 담당자 유선 보고. 수신 지휘자는 인재정보개발실 담당자에게 연락. 장애 복구 전까지 병의원 내선 또는 환자관리 전화상담 활용.",
-                                    contacts: [
-                                        { name: "이기민 프로", phone: "010-2972-1594", department: "인재정보개발실 인사지원팀", note: "1순위" },
-                                        { name: "박종배 프로", phone: "010-9136-4042", department: "인재정보개발실 인사지원팀", note: "2순위" }
-                                    ]
-                                },
-                                {
-                                    name: "야간/휴일 (18:00 ~ 익일 09:00)",
-                                    action: "장애 발견자는 카카오톡 단톡방 공유. 수신 지휘자는 사안에 따라 순차적 유선 연락.",
-                                    contacts: [
-                                        { name: "인재정보개발실 단톡방", phone: "카카오톡", department: "인재정보개발실", note: "장애 상황 공유 및 순차 연락 (이기민, 박종배 프로)" }
-                                    ]
-                                }
-                        ]
-                    }
-                ]
-            },
-            {
-                id: "onlineReservation",
-                title: "온라인 예약 장애",
-                icon: "📅",
-                    description: "온라인 예약 시스템(reservation.jaseng.co.kr/) 관련 장애",
-                    subtypes: [
-                        {
-                            name: "링크 접속 장애 및 '진료예약' 페이지 장애",
-                scenarios: [
-                    {
-                                    name: "주간/야간 동일",
-                        action: "장애 발견자는 쪽지 공유(주간) 또는 유선 연락(야간). 담당 부서에 즉시 연락.",
-                        contacts: [
-                            { name: "이종우 프로", phone: "010-8493-2046", department: "의료정보실 INFRA", note: "1순위" },
-                            { name: "공광현 프로", phone: "010-9197-9399", department: "의료정보실 INFRA" },
-                                        { name: "이춘희 프로", phone: "010-5019-0006", department: "의료정보실 INFRA" },
-                            { name: "김지애 실장", phone: "010-6406-1978", department: "고객지원실" },
-                            { name: "김지선 팀장", phone: "010-4006-9945", department: "고객지원실" },
-                            { name: "강민영 팀장", phone: "010-2563-7711", department: "고객지원실" },
-                            { name: "상담지원팀 전체", phone: "부서 연락", department: "고객지원실" }
-                                    ]
-                                }
-                        ]
-                    },
-                    {
-                            name: "'진료예약' 이후 페이지 장애",
-                            scenarios: [
-                                {
-                                    name: "주간/야간 동일",
-                        action: "장애 발견자는 쪽지 공유(주간) 또는 유선 연락(야간). 담당 부서에 즉시 연락.",
-                        contacts: [
-                            { name: "한상협 프로", phone: "010-9145-5045", department: "의료정보실 SM", note: "1순위" },
-                            { name: "송하은 프로", phone: "010-3863-0222", department: "의료정보실 SM" },
-                            { name: "김지애 실장", phone: "010-6406-1978", department: "고객지원실" },
-                            { name: "김지선 팀장", phone: "010-4006-9945", department: "고객지원실" },
-                            { name: "강민영 팀장", phone: "010-2563-7711", department: "고객지원실" },
-                            { name: "상담지원팀 전체", phone: "부서 연락", department: "고객지원실" }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            name: "특정 병의원 접속 불가",
-                            scenarios: [
-                                {
-                                    name: "주간/야간 동일",
-                                    action: "특정 병의원 서버 접속 불가 시 담당 부서에 즉시 연락.",
-                                    contacts: [
-                                        { name: "영종호 대표", phone: "010-7193-1646", department: "JSD1", note: "특정 병의원 서버 전체 장애 시" },
-                                        { name: "해당 병의원 행정실장", phone: "TIS조회", department: "각 병의원", note: "특정 병의원 서버 전체 장애 시" }
-                                    ]
-                                }
-                        ]
-                    }
-                ]
-            },
-             {
+    "id": "otherSystems",
+    "title": "자사 사용 (웹)시스템 장애",
+    "icon": "⚙️",
+    "description": "<b>어드민, J-TiS, J-WITH, 비즈박스, Smart Work System 등</b>",
+    "subtypes": [
+      {
+        "name": "자생위드/J-TIS/비즈박스 장애",
+        "scenarios": [
+          {
+            "name": "주간 (09:00 ~ 18:00)",
+            "action": "장애 발견자는 ①+② 쪽지 공유.",
+            "contacts": [
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지애 실장",
+                "phone": "010-6406-1978",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지선 팀장",
+                "phone": "010-4006-9945",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "강민영 팀장",
+                "phone": "010-2563-7711",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "이정훈 프로",
+                "phone": "010-8297-1864",
+                "note": ""
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "이기민 프로",
+                "phone": "010-2972-1594",
+                "note": "쪽지 공유 시"
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "박종배 프로",
+                "phone": "010-9136-4042",
+                "note": "쪽지 공유 시"
+              },
+              {
+                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
+                "department": "(1순위)",
+                "name": "이기민 프로",
+                "phone": "010-2972-1594",
+                "note": "내선 : (#77) 1592"
+              },
+              {
+                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
+                "department": "(2순위)",
+                "name": "박종배 프로",
+                "phone": "010-9136-4042",
+                "note": "내선 : (#77) 1594"
+              }
+            ],
+            "color": "#ffffff"
+          },
+          {
+            "name": "야간/휴일 (18:00 ~ 24:00)",
+            "action": "장애 발견자는 ① 카카오톡 단톡방 공유.&nbsp;<div>② 순차적으로 유선 연락.</div>",
+            "contacts": [
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지애 실장",
+                "phone": "010-6406-1978",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지선 팀장",
+                "phone": "010-4006-9945",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "강민영 팀장",
+                "phone": "010-2563-7711",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "이정훈 프로",
+                "phone": "010-8297-1864",
+                "note": ""
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "이기민 프로",
+                "phone": "010-2972-1594",
+                "note": "유선 연락시 (1순위)"
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "박종배 프로",
+                "phone": "010-9136-4042",
+                "note": "유선 연락시 (2순위)"
+              }
+            ],
+            "color": "#f9f6f6"
+          },
+          {
+            "name": "심야 (24:00 ~ 익일 09:00)",
+            "action": "<div><span style=\"font-size: 1em;\">장애 발견자는</span><span style=\"font-size: 1em;\">&nbsp;</span><span style=\"font-size: 1em;\">② 순차적으로 연락.</span></div><div>오전 7시 이후인 경우 ①+② 카카오톡 단톡 공유.</div>",
+            "color": "#ffffff",
+            "contacts": [
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지애 실장",
+                "phone": "010-6406-1978",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지선 팀장",
+                "phone": "010-4006-9945",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "강민영 팀장",
+                "phone": "010-2563-7711",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "이정훈 프로",
+                "phone": "010-8297-1864",
+                "note": ""
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "이기민 프로",
+                "phone": "010-2972-1594",
+                "note": "유선 연락시 (1순위)"
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "박종배 프로",
+                "phone": "010-9136-4042",
+                "note": "유선 연락시 (2순위)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CS페이지(어드민)/ Smart Work System 장애",
+        "scenarios": [
+          {
+            "name": "주간 (09:00 ~ 18:00)",
+            "action": "<span style=\"color: rgb(71, 85, 105); font-size: 14px; background-color: rgb(255, 255, 255);\">장애 발견자는 ①+② 쪽지 공유.</span>",
+            "contacts": [
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지애 실장",
+                "phone": "010-6406-1978",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지선 팀장",
+                "phone": "010-4006-9945",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "강민영 팀장",
+                "phone": "010-2563-7711",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "이정훈 프로",
+                "phone": "010-8297-1864",
+                "note": ""
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "이기민 프로",
+                "phone": "010-2972-1594",
+                "note": ""
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "박종배 프로",
+                "phone": "010-9136-4042",
+                "note": ""
+              }
+            ],
+            "color": "#ffffff"
+          },
+          {
+            "name": "야간/휴일 (18:00 ~ 24:00)",
+            "action": "장애 발견자는 ① 카카오톡 단톡 공유.<div>② 순차적으로 유선 연락</div>",
+            "contacts": [
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지애 실장",
+                "phone": "010-6406-1978",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지선 팀장",
+                "phone": "010-4006-9945",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "강민영 팀장",
+                "phone": "010-2563-7711",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "이정훈 프로",
+                "phone": "010-8297-1864",
+                "note": ""
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "이기민 프로",
+                "phone": "010-2972-1594",
+                "note": "유선 연락시 (1순위)"
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "박종배 프로",
+                "phone": "010-9136-4042",
+                "note": "유선 연락시 (2순위)"
+              }
+            ],
+            "color": "#ffffff"
+          },
+          {
+            "name": "심야 (24:00 ~ 익일 09:00)",
+            "action": "<div style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(71, 85, 105); font-size: 14px; background-color: rgb(255, 255, 255);\"><span style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: 1em;\">장애 발견자는</span><span style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: 1em;\">&nbsp;</span><span style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: 1em;\">② 순차적으로 연락.</span></div><div style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(71, 85, 105); font-size: 14px; background-color: rgb(255, 255, 255);\">오전 7시 이후인 경우 ① 카카오톡 단톡 공유.</div>",
+            "color": "#ffffff",
+            "contacts": [
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지애 실장",
+                "phone": "010-6406-1978",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지선 팀장",
+                "phone": "010-4006-9945",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "강민영 팀장",
+                "phone": "010-2563-7711",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "이정훈 프로",
+                "phone": "010-8297-1864",
+                "note": ""
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "이기민 프로",
+                "phone": "010-2972-1594",
+                "note": "유선 연락시 (1순위)"
+              },
+              {
+                "no": "②",
+                "department": "인사지원팀",
+                "name": "박종배 프로",
+                "phone": "010-9136-4042",
+                "note": "유선 연락시 (2순위)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "color": "#f9e1e2"
+  },
+  {
+    "id": "onlineReservation",
+    "title": "온라인 예약 장애",
+    "icon": "📅",
+    "description": "<b>온라인 예약 시스템(reservation.jaseng.co.kr/) 관련 장애</b>",
+    "subtypes": [
+      {
+        "name": "링크 접속 장애 및 '진료예약' 페이지 장애",
+        "scenarios": [
+          {
+            "name": "주간 (09:00 ~ 18:00)",
+            "action": "장애 발견자는 ①+② 쪽지 공유",
+            "contacts": [
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지애 실장",
+                "phone": "010-6406-1978",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지선 팀장",
+                "phone": "010-4006-9945",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "강민영 팀장",
+                "phone": "010-2563-7711",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "권미 프로",
+                "phone": "010-4613-4490",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "이정훈 프로",
+                "phone": "010-8297-1864",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김유미 프로",
+                "phone": "010-7199-3523",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "정현주 프로",
+                "phone": "010-6850-2336",
+                "note": ""
+              },
+              {
+                "no": "②",
+                "department": "의료정보2팀",
+                "name": "이종우 프로",
+                "phone": "010-8493-2046",
+                "note": "(1순위)"
+              },
+              {
+                "no": "②",
+                "department": "의료정보2팀",
+                "name": "공광현 프로",
+                "phone": "010-9197-9399",
+                "note": "(2순위)"
+              },
+              {
+                "no": "②",
+                "department": "의료정보 2팀",
+                "name": "이준희 프로",
+                "phone": "010-5019-0006",
+                "note": "(2순위)"
+              }
+            ],
+            "color": "#fafafa"
+          },
+          {
+            "name": "야간/휴일 (18:00 ~ 익일 09:00)",
+            "action": "장애 발견자는 ② 유선 연락",
+            "color": "#ffffff",
+            "contacts": [
+              {
+                "no": "②",
+                "department": "의료정보2팀",
+                "name": "이종우 프로",
+                "phone": "010-8493-2046",
+                "note": "(1순위)"
+              },
+              {
+                "no": "②",
+                "department": "의료정보2팀",
+                "name": "공광현 프로",
+                "phone": "010-9197-9399",
+                "note": "(2순위)"
+              },
+              {
+                "no": "②",
+                "department": "의료정보2팀",
+                "name": "이준희 프로",
+                "phone": "010-5019-0006",
+                "note": "(2순위)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "'진료예약' 이후 페이지 장애",
+        "scenarios": [
+          {
+            "name": "주간 (09:00 ~ 18:00)",
+            "action": "<div>장애 발견자는&nbsp;<span style=\"font-size: 1em;\">①+③ 쪽지 공유</span></div>",
+            "contacts": [
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지애 실장",
+                "phone": "010-6406-1978",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김지선 팀장",
+                "phone": "010-4006-9945",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "강민영 팀장",
+                "phone": "010-2563-7711",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "권미 프로",
+                "phone": "010-4613-4490",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "이정훈 프로",
+                "phone": "010-8297-1864",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "김유미 프로",
+                "phone": "010-7199-3523",
+                "note": ""
+              },
+              {
+                "no": "①",
+                "department": "고객지원실",
+                "name": "정현주 프로",
+                "phone": "010-6850-2336",
+                "note": ""
+              },
+              {
+                "no": "③",
+                "department": "의료정보1팀",
+                "name": "한상협 프로",
+                "phone": "010-9145-5045",
+                "note": "(1순위)"
+              },
+              {
+                "no": "③",
+                "department": "의료정보1팀",
+                "name": "송하은 팀장",
+                "phone": "010-3863-0222",
+                "note": "(2순위)"
+              }
+            ],
+            "color": "#ffffff"
+          },
+          {
+            "name": "야간/휴일 (18:00 ~ 익일 09:00)",
+            "action": "장애 발견자는 ③ 유선 연락",
+            "color": "#ffffff",
+            "contacts": [
+              {
+                "no": "③",
+                "department": "의료정보1팀",
+                "name": "한상협 프로",
+                "phone": "010-9145-5045",
+                "note": "(1순위)"
+              },
+              {
+                "no": "③",
+                "department": "의료정보2팀",
+                "name": "송하은 팀장",
+                "phone": "010-3863-0222",
+                "note": "(2순위)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "특정 병의원 접속 불가",
+        "scenarios": [
+          {
+            "name": "주간 (09:00 ~ 18:00)",
+            "action": "특정 병의원 서버 접속 불가 시 담당 부서에 즉시 연락.",
+            "contacts": [
+              {
+                "name": "영종호 대표",
+                "phone": "010-7193-1646",
+                "department": "JSD1",
+                "note": "특정 병의원 서버 전체 장애 시"
+              },
+              {
+                "name": "해당 병의원 행정실장",
+                "phone": "TIS조회",
+                "department": "각 병의원",
+                "note": "특정 병의원 서버 전체 장애 시"
+              }
+            ],
+            "color": "#fcfcfc"
+          },
+          {
+            "name": "야간/휴일 (18:00 ~ 익일 09:00)",
+            "action": "",
+            "color": "#ffffff",
+            "contacts": []
+          }
+        ]
+      }
+    ],
+    "color": "#edf2ca"
+   },
+   {
                 id: "communication",
                 title: "통신 장애 (SKB, KT)",
                 icon: "📡",
