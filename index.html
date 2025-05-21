@@ -1266,7 +1266,7 @@
             ],
             "color": "#fcfcfc"
           },
-         {
+          {
             "name": "야간/휴일 (18:00 ~ 익일 09:00)",
             "action": "",
             "color": "#ffffff",
@@ -1276,6 +1276,23 @@
       }
     ],
     "color": "#edf2ca"
+   },
+   {
+                id: "communication",
+                title: "통신 장애 (SKB, KT)",
+                icon: "📡",
+                description: "외부 통신망 사업자 관련 장애 발생 시",
+                scenarios: [
+                    {
+                        name: "통신사 장애 발생 시",
+                        action: "장애 발견자는 즉시 고객지원실 지휘자에게 보고. 지휘자는 신계동 팀장에게 연락하여 상황 전파 및 대응 지시.",
+                        contacts: [
+                            { name: "신계동 팀장", phone: "010-5207-1442", department: "총괄 지휘자 (통신 장애)", note: "통신사 장애 시 총괄" },
+                            { name: "고객지원실 지휘자", phone: "내선/유선", department: "고객지원실", note: "1차 보고 및 상황 판단" }
+                        ]
+                    }
+                ]
+            }
         ];
         }
             
