@@ -213,7 +213,7 @@
             {
     "id": "callSystem",
     "title": "콜시스템 장애",
-    "icon": "📞",
+    "icon": `<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>`,
     "description": "<b>교환기, 콜백, 녹취, 통계 시스템 관련 장애</b>",
     "subtypes": [
       {
@@ -223,64 +223,22 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "장애 발견자는 <b>① </b>쪽지 공유 및 담당자 유선 보고.<div><span style=\"font-size: 1em;\">수신 지휘자는 <b>⑦ </b>유지보수 업체(지엔텔) 연락 및 상황 전파.</span><div><span style=\"color: rgb(239, 68, 68);\"><b>전화인입 장애인 경우 수신 지휘차는 <b>④+⑥ </b>즉시 보고</b></span></div></div>",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "④",
-                "department": "JSD1 대표",
-                "name": "염종호 대표",
-                "phone": "010-7193-1646",
-                "note": ""
-              },
-              {
-                "no": "⑥",
-                "department": "PM팀",
-                "name": "신계등 프로",
-                "phone": "010-5207-1442",
-                "note": "통신(SKB, KT) 장애 시 총지휘자"
-              },
-              {
-                "no": "⑦",
-                "department": "지엔텔(유지보수)",
-                "name": "이승환 차장",
-                "phone": "010-5274-1383",
-                "note": "유지보수 업체 PM"
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "④", "department": "JSD1 대표", "name": "염종호 대표", "phone": "010-7193-1646", "note": "" },
+              { "no": "⑥", "department": "PM팀", "name": "신계등 프로", "phone": "010-5207-1442", "note": "통신(SKB, KT) 장애 시 총지휘자" },
+              { "no": "⑦", "department": "지엔텔(유지보수)", "name": "이승환 차장", "phone": "010-5274-1383", "note": "유지보수 업체 PM" }
             ],
             "color": "#ffffff"
           },
           {
             "name": "야간/휴일 (18:00 ~ 익일 09:00)",
-            "action": "장애 발견자는 시간 상관없이 <b>⑦</b>지엔텔 이승환 차장 연락 후 <b>⑧</b>카카오톡 단톡방 공유.",
+            "action": "장애 발견자는 <b>⑦</b>지엔텔 이승환 차장 연락 후 <b>⑧</b>카카오톡 단톡방 공유.",
             "contacts": [
               { "no": "⑦", "department": "지엔텔 (유지보수)", "name": "이승한 차장", "phone": "010-5274-1383", "note": "유지보수 업체 PM" },
-              { "no": "⑧", "department": "고객지원실", "name": "고객지원실 단톡방", "phone": "카카오톡", "note": "장애 상황 공유(고객지원실 18시 ~ 익일 오전 9시 및 일요일 장애 시 단톡방)\n\n* 단톡방 고정 참여 인원\n  - 고객지원실 : 김지애 실장, 김지선 팀장, 강민영 팀장, 상담예약1,2팀 파트장, 이정훈 프로, 양수진 프로, 김나성 프로, 김지형 프로\n  - 업무지원실 : 차주석 프로\n  - 유지보수 업체(지엔텔) : 이승환 차장\n\n* 단톡방 유동적 참여 인원\n  - 의료정보실 : 조민호 팀장, 이종우 프로\n\n• 단톡방 초대가 필요한 경우\n  - 전산 장애시(Amis or 환자관리 병의원 서버 문제 등)\n - 장애 원인이 불분명한 경우 , 판단이 어려운 경우\n\n▣ 장애가 발생한 경우 1명의 보고자만이 장애에 대해 보고(상담예약팀)\n  - 야간 : 1차 김은정 → 부재시 양수진\n  - 심야 : 1차 김나성 → 부재시 김지형\n  - 주간 : 장애발생 최초 확인 파트장" } 
+              { "no": "⑧", "department": "고객지원실", "name": "고객지원실 단톡방", "phone": "카카오톡", "note": danTokBangNote }
             ],
             "color": "#ffffff"
           }
@@ -293,41 +251,11 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "장애 발견자는 <b>①</b> 쪽지 공유 및 담당자 유선 보고.&nbsp;<div>수신 지휘자는 <b>⑦</b> 유지보수 업체(지엔텔) 연락 및 상황 전파.</div>",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": "1차 보고"
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": "2차 보고"
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": "3차 보고"
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-2195-1864",
-                "note": ""
-              },
-              {
-                "no": "⑦",
-                "department": "지엔텔 (유지보수)",
-                "name": "이승한 차장",
-                "phone": "010-5274-1383",
-                "note": "유지보수 업체 PM"
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "1차 보고" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "2차 보고" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "3차 보고" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-2195-1864", "note": "" },
+              { "no": "⑦", "department": "지엔텔 (유지보수)", "name": "이승한 차장", "phone": "010-5274-1383", "note": "유지보수 업체 PM" }
             ],
             "color": "#ffffff"
           },
@@ -336,7 +264,7 @@
             "action": "장애 발견자는 <b>⑧</b> 카카오톡 단톡방 공유.&nbsp;<div>수신 지휘자는 사안에 따라 <b>⑦</b> 지엔텔 이승환 차장 연락.</div>",
             "contacts": [
               { "no": "⑦", "department": "지엔텔 (유지보수)", "name": "이승한 차장", "phone": "010-5274-1383", "note": "유지보수 업체 PM" },
-              { "no": "⑧", "department": "고객지원실", "name": "고객지원실 단톡방", "phone": "카카오톡", "note": "장애 상황 공유(고객지원실 18시 ~ 익일 오전 9시 및 일요일 장애 시 단톡방)\n\n* 단톡방 고정 참여 인원\n  - 고객지원실 : 김지애 실장, 김지선 팀장, 강민영 팀장, 상담예약1,2팀 파트장, 이정훈 프로, 양수진 프로, 김나성 프로, 김지형 프로\n  - 업무지원실 : 차주석 프로\n  - 유지보수 업체(지엔텔) : 이승환 차장\n\n* 단톡방 유동적 참여 인원\n  - 의료정보실 : 조민호 팀장, 이종우 프로\n\n• 단톡방 초대가 필요한 경우\n  - 전산 장애시(Amis or 환자관리 병의원 서버 문제 등)\n - 장애 원인이 불분명한 경우 , 판단이 어려운 경우\n\n▣ 장애가 발생한 경우 1명의 보고자만이 장애에 대해 보고(상담예약팀)\n  - 야간 : 1차 김은정 → 부재시 양수진\n  - 심야 : 1차 김나성 → 부재시 김지형\n  - 주간 : 장애발생 최초 확인 파트장" }
+              { "no": "⑧", "department": "고객지원실", "name": "고객지원실 단톡방", "phone": "카카오톡", "note": danTokBangNote }
             ],
             "color": "#ffffff"
           }
@@ -348,7 +276,7 @@
   {
     "id": "amisServer",
     "title": "전산 시스템 장애 (AMIS, 환자관리)",
-    "icon": "💻",
+    "icon": `<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>`,
     "description": "<b>AMIS 또는 환자관리 병의원 서버 관련 장애</b>",
     "subtypes": [
       {
@@ -358,97 +286,19 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "장애 발견자는 ①+③ 쪽지 공유.<div>수신 지휘자는 사안에 따라 ④ 보고.</div><div><span style=\"color: rgb(37, 99, 235);\"><b><b><b>※ 전산 속도 저하시에는 ③ 순차적으로 내선 연락.</b></b></b></span></div>",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보2팀",
-                "name": "조민호 팀장",
-                "phone": "010-7479-0311",
-                "note": "쪽지 공유 시"
-              },
-              {
-                "no": "③",
-                "department": "의료정보2팀",
-                "name": "이종우 프로",
-                "phone": "010-8493-2046",
-                "note": "쪽지 공유 시"
-              },
-              {
-                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
-                "department": "(1순위)",
-                "name": "이종우 프로",
-                "phone": "010-8493-2046",
-                "note": "내선 : (#77) 1567"
-              },
-              {
-                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
-                "department": "(2순위)",
-                "name": "공광현 프로",
-                "phone": "010-9197-9399",
-                "note": "내선 : (#77) 1569"
-              },
-              {
-                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
-                "department": "(2순위)",
-                "name": "이준희 프로",
-                "phone": "010-5019-0006",
-                "note": "내선 : (#77) 1568"
-              },
-              {
-                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
-                "department": "(3순위)",
-                "name": "조민호 팀장",
-                "phone": "010-7479-0311",
-                "note": "내선 : (#77) 1565"
-              },
-              {
-                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
-                "department": "(4순위)",
-                "name": "송석진 프로",
-                "phone": "010-6289-0759",
-                "note": "내선 : (#77) 1560"
-              },
-              {
-                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
-                "department": "(5순위)",
-                "name": "김지훈 이사",
-                "phone": "010-4517-3604",
-                "note": "내선 : (#77) 1530"
-              },
-              {
-                "no": "④",
-                "department": "JSD1 대표",
-                "name": "염종호 대표",
-                "phone": "010-7193-1646",
-                "note": ""
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "③", "department": "의료정보2팀", "name": "조민호 팀장", "phone": "010-7479-0311", "note": "쪽지 공유 시" },
+              { "no": "③", "department": "의료정보2팀", "name": "이종우 프로", "phone": "010-8493-2046", "note": "쪽지 공유 시" },
+              { "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)", "department": "(1순위)", "name": "이종우 프로", "phone": "010-8493-2046", "note": "내선 : (#77) 1567" },
+              { "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)", "department": "(2순위)", "name": "공광현 프로", "phone": "010-9197-9399", "note": "내선 : (#77) 1569" },
+              { "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)", "department": "(2순위)", "name": "이준희 프로", "phone": "010-5019-0006", "note": "내선 : (#77) 1568" },
+              { "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)", "department": "(3순위)", "name": "조민호 팀장", "phone": "010-7479-0311", "note": "내선 : (#77) 1565" },
+              { "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)", "department": "(4순위)", "name": "송석진 프로", "phone": "010-6289-0759", "note": "내선 : (#77) 1560" },
+              { "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)", "department": "(5순위)", "name": "김지훈 이사", "phone": "010-4517-3604", "note": "내선 : (#77) 1530" },
+              { "no": "④", "department": "JSD1 대표", "name": "염종호 대표", "phone": "010-7193-1646", "note": "" }
             ],
             "color": "#ffffff"
           },
@@ -479,55 +329,19 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "장애 발견자는 ①+③ 쪽지 공유.",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보2팀",
-                "name": "조민호 팀장",
-                "phone": "010-7479-0311",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보2팀",
-                "name": "이종우 프로",
-                "phone": "010-8493-2046",
-                "note": ""
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "③", "department": "의료정보2팀", "name": "조민호 팀장", "phone": "010-7479-0311", "note": "" },
+              { "no": "③", "department": "의료정보2팀", "name": "이종우 프로", "phone": "010-8493-2046", "note": "" }
             ],
             "color": "#ffffff"
           },
           {
             "name": "야간/휴일 (18:00 ~ 24:00)",
             "action": "장애 발견자는 ⑧ 카카오톡 단톡방 공유.&nbsp;",
-         "contacts": [
+            "contacts": [
               { "no": "⑧", "department": "고객지원실", "name": "고객지원실 단톡방", "phone": "카카오톡", "note": danTokBangNote }
             ],
             "color": "#f7f7f7"
@@ -548,7 +362,7 @@
   {
     "id": "otherSystems",
     "title": "자사 사용 (웹)시스템 장애",
-    "icon": "⚙️",
+    "icon": `<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>`,
     "description": "<b>어드민, J-TiS, J-WITH, 비즈박스, Smart Work System 등</b>",
     "subtypes": [
       {
@@ -558,62 +372,14 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "장애 발견자는 ①+② 쪽지 공유.",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "이기민 프로",
-                "phone": "010-2972-1594",
-                "note": "쪽지 공유 시"
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "박종배 프로",
-                "phone": "010-9136-4042",
-                "note": "쪽지 공유 시"
-              },
-              {
-                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
-                "department": "(1순위)",
-                "name": "이기민 프로",
-                "phone": "010-2972-1594",
-                "note": "내선 : (#77) 1592"
-              },
-              {
-                "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)",
-                "department": "(2순위)",
-                "name": "박종배 프로",
-                "phone": "010-9136-4042",
-                "note": "내선 : (#77) 1594"
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "②", "department": "인사지원팀", "name": "이기민 프로", "phone": "010-2972-1594", "note": "쪽지 공유 시" },
+              { "no": "②", "department": "인사지원팀", "name": "박종배 프로", "phone": "010-9136-4042", "note": "쪽지 공유 시" },
+              { "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)", "department": "(1순위)", "name": "이기민 프로", "phone": "010-2972-1594", "note": "내선 : (#77) 1592" },
+              { "no": "쪽지로 공유하였으나, 응답없을시 내선(순차전달)", "department": "(2순위)", "name": "박종배 프로", "phone": "010-9136-4042", "note": "내선 : (#77) 1594" }
             ],
             "color": "#ffffff"
           },
@@ -621,48 +387,12 @@
             "name": "야간/휴일 (18:00 ~ 24:00)",
             "action": "장애 발견자는 ① 카카오톡 단톡방 공유.&nbsp;<div>② 순차적으로 유선 연락.</div>",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "이기민 프로",
-                "phone": "010-2972-1594",
-                "note": "유선 연락시 (1순위)"
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "박종배 프로",
-                "phone": "010-9136-4042",
-                "note": "유선 연락시 (2순위)"
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "②", "department": "인사지원팀", "name": "이기민 프로", "phone": "010-2972-1594", "note": "유선 연락시 (1순위)" },
+              { "no": "②", "department": "인사지원팀", "name": "박종배 프로", "phone": "010-9136-4042", "note": "유선 연락시 (2순위)" }
             ],
             "color": "#f9f6f6"
           },
@@ -671,48 +401,12 @@
             "action": "<div><span style=\"font-size: 1em;\">장애 발견자는</span><span style=\"font-size: 1em;\">&nbsp;</span><span style=\"font-size: 1em;\">② 순차적으로 연락.</span></div><div>오전 7시 이후인 경우 ①+② 카카오톡 단톡 공유.</div>",
             "color": "#ffffff",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "이기민 프로",
-                "phone": "010-2972-1594",
-                "note": "유선 연락시 (1순위)"
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "박종배 프로",
-                "phone": "010-9136-4042",
-                "note": "유선 연락시 (2순위)"
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "②", "department": "인사지원팀", "name": "이기민 프로", "phone": "010-2972-1594", "note": "유선 연락시 (1순위)" },
+              { "no": "②", "department": "인사지원팀", "name": "박종배 프로", "phone": "010-9136-4042", "note": "유선 연락시 (2순위)" }
             ]
           }
         ]
@@ -724,48 +418,12 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "<span style=\"color: rgb(71, 85, 105); font-size: 14px; background-color: rgb(255, 255, 255);\">장애 발견자는 ①+② 쪽지 공유.</span>",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "이기민 프로",
-                "phone": "010-2972-1594",
-                "note": ""
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "박종배 프로",
-                "phone": "010-9136-4042",
-                "note": ""
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "②", "department": "인사지원팀", "name": "이기민 프로", "phone": "010-2972-1594", "note": "" },
+              { "no": "②", "department": "인사지원팀", "name": "박종배 프로", "phone": "010-9136-4042", "note": "" }
             ],
             "color": "#ffffff"
           },
@@ -773,48 +431,12 @@
             "name": "야간/휴일 (18:00 ~ 24:00)",
             "action": "장애 발견자는 ① 카카오톡 단톡 공유.<div>② 순차적으로 유선 연락</div>",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "이기민 프로",
-                "phone": "010-2972-1594",
-                "note": "유선 연락시 (1순위)"
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "박종배 프로",
-                "phone": "010-9136-4042",
-                "note": "유선 연락시 (2순위)"
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "②", "department": "인사지원팀", "name": "이기민 프로", "phone": "010-2972-1594", "note": "유선 연락시 (1순위)" },
+              { "no": "②", "department": "인사지원팀", "name": "박종배 프로", "phone": "010-9136-4042", "note": "유선 연락시 (2순위)" }
             ],
             "color": "#ffffff"
           },
@@ -823,48 +445,12 @@
             "action": "<div style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(71, 85, 105); font-size: 14px; background-color: rgb(255, 255, 255);\"><span style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: 1em;\">장애 발견자는</span><span style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: 1em;\">&nbsp;</span><span style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: 1em;\">② 순차적으로 연락.</span></div><div style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(71, 85, 105); font-size: 14px; background-color: rgb(255, 255, 255);\">오전 7시 이후인 경우 ① 카카오톡 단톡 공유.</div>",
             "color": "#ffffff",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "이기민 프로",
-                "phone": "010-2972-1594",
-                "note": "유선 연락시 (1순위)"
-              },
-              {
-                "no": "②",
-                "department": "인사지원팀",
-                "name": "박종배 프로",
-                "phone": "010-9136-4042",
-                "note": "유선 연락시 (2순위)"
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "②", "department": "인사지원팀", "name": "이기민 프로", "phone": "010-2972-1594", "note": "유선 연락시 (1순위)" },
+              { "no": "②", "department": "인사지원팀", "name": "박종배 프로", "phone": "010-9136-4042", "note": "유선 연락시 (2순위)" }
             ]
           }
         ]
@@ -875,7 +461,7 @@
   {
     "id": "onlineReservation",
     "title": "온라인 예약 장애",
-    "icon": "📅",
+    "icon": `<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>`,
     "description": "<b>온라인 예약 시스템(reservation.jaseng.co.kr/) 관련 장애</b>",
     "subtypes": [
       {
@@ -885,76 +471,16 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "장애 발견자는 ①+② 쪽지 공유",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "권미 프로",
-                "phone": "010-4613-4490",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김유미 프로",
-                "phone": "010-7199-3523",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "정현주 프로",
-                "phone": "010-6850-2336",
-                "note": ""
-              },
-              {
-                "no": "②",
-                "department": "의료정보2팀",
-                "name": "이종우 프로",
-                "phone": "010-8493-2046",
-                "note": "(1순위)"
-              },
-              {
-                "no": "②",
-                "department": "의료정보2팀",
-                "name": "공광현 프로",
-                "phone": "010-9197-9399",
-                "note": "(2순위)"
-              },
-              {
-                "no": "②",
-                "department": "의료정보 2팀",
-                "name": "이준희 프로",
-                "phone": "010-5019-0006",
-                "note": "(2순위)"
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "권미 프로", "phone": "010-4613-4490", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김유미 프로", "phone": "010-7199-3523", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "정현주 프로", "phone": "010-6850-2336", "note": "" },
+              { "no": "②", "department": "의료정보2팀", "name": "이종우 프로", "phone": "010-8493-2046", "note": "(1순위)" },
+              { "no": "②", "department": "의료정보2팀", "name": "공광현 프로", "phone": "010-9197-9399", "note": "(2순위)" },
+              { "no": "②", "department": "의료정보 2팀", "name": "이준희 프로", "phone": "010-5019-0006", "note": "(2순위)" }
             ],
             "color": "#fafafa"
           },
@@ -963,27 +489,9 @@
             "action": "장애 발견자는 ② 유선 연락",
             "color": "#ffffff",
             "contacts": [
-              {
-                "no": "②",
-                "department": "의료정보2팀",
-                "name": "이종우 프로",
-                "phone": "010-8493-2046",
-                "note": "(1순위)"
-              },
-              {
-                "no": "②",
-                "department": "의료정보2팀",
-                "name": "공광현 프로",
-                "phone": "010-9197-9399",
-                "note": "(2순위)"
-              },
-              {
-                "no": "②",
-                "department": "의료정보2팀",
-                "name": "이준희 프로",
-                "phone": "010-5019-0006",
-                "note": "(2순위)"
-              }
+              { "no": "②", "department": "의료정보2팀", "name": "이종우 프로", "phone": "010-8493-2046", "note": "(1순위)" },
+              { "no": "②", "department": "의료정보2팀", "name": "공광현 프로", "phone": "010-9197-9399", "note": "(2순위)" },
+              { "no": "②", "department": "의료정보2팀", "name": "이준희 프로", "phone": "010-5019-0006", "note": "(2순위)" }
             ]
           }
         ]
@@ -995,76 +503,16 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "<div>장애 발견자는&nbsp;<span style=\"font-size: 1em;\">①+③ 쪽지 공유</span></div>",
             "contacts": [
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "권미 프로",
-                "phone": "010-4613-4490",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김유미 프로",
-                "phone": "010-7199-3523",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "정현주 프로",
-                "phone": "010-6850-2336",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보1팀",
-                "name": "송하은 팀장",
-                "phone": "010-3863-0222",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보1팀",
-                "name": "심윤석 프로",
-                "phone": "010-3863-0222",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보1팀",
-                "name": "김우림 프로",
-                "phone": "010-3516-2638",
-                "note": ""
-              }
+              { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "권미 프로", "phone": "010-4613-4490", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김유미 프로", "phone": "010-7199-3523", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "정현주 프로", "phone": "010-6850-2336", "note": "" },
+              { "no": "③", "department": "의료정보1팀", "name": "송하은 팀장", "phone": "010-3863-0222", "note": "" },
+              { "no": "③", "department": "의료정보1팀", "name": "심윤석 프로", "phone": "010-3863-0222", "note": "" },
+              { "no": "③", "department": "의료정보1팀", "name": "김우림 프로", "phone": "010-3516-2638", "note": "" }
             ],
             "color": "#ffffff"
           },
@@ -1073,13 +521,7 @@
             "action": "장애 발견자는 ③ 유선 연락",
             "color": "#ffffff",
             "contacts": [
-              {
-                "no": "③",
-                "department": "의료정보1팀",
-                "name": "송하은 팀장",
-                "phone": "010-3863-0222",
-                "note": ""
-              }
+              { "no": "③", "department": "의료정보1팀", "name": "송하은 팀장", "phone": "010-3863-0222", "note": "" }
             ]
           }
         ]
@@ -1091,76 +533,16 @@
             "name": "주간 (09:00 ~ 18:00)",
             "action": "<div>장애 발견자는&nbsp;<span style=\"font-size: 1em;\">①+③ 쪽지 공유</span></div>",
             "contacts": [
-               {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지애 실장",
-                "phone": "010-6406-1978",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김지선 팀장",
-                "phone": "010-4006-9945",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "강민영 팀장",
-                "phone": "010-2563-7711",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "권미 프로",
-                "phone": "010-4613-4490",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "이정훈 프로",
-                "phone": "010-8297-1864",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "김유미 프로",
-                "phone": "010-7199-3523",
-                "note": ""
-              },
-              {
-                "no": "①",
-                "department": "고객지원실",
-                "name": "정현주 프로",
-                "phone": "010-6850-2336",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보1팀",
-                "name": "송하은 팀장",
-                "phone": "010-3863-0222",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보1팀",
-                "name": "심윤석 프로",
-                "phone": "010-3863-0222",
-                "note": ""
-              },
-              {
-                "no": "③",
-                "department": "의료정보1팀",
-                "name": "김우림 프로",
-                "phone": "010-3516-2638",
-                "note": ""
-              }
+               { "no": "①", "department": "고객지원실", "name": "김지애 실장", "phone": "010-6406-1978", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김지선 팀장", "phone": "010-4006-9945", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "강민영 팀장", "phone": "010-2563-7711", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "권미 프로", "phone": "010-4613-4490", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "이정훈 프로", "phone": "010-8297-1864", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "김유미 프로", "phone": "010-7199-3523", "note": "" },
+              { "no": "①", "department": "고객지원실", "name": "정현주 프로", "phone": "010-6850-2336", "note": "" },
+              { "no": "③", "department": "의료정보1팀", "name": "송하은 팀장", "phone": "010-3863-0222", "note": "" },
+              { "no": "③", "department": "의료정보1팀", "name": "심윤석 프로", "phone": "010-3863-0222", "note": "" },
+              { "no": "③", "department": "의료정보1팀", "name": "김우림 프로", "phone": "010-3516-2638", "note": "" }
             ],
             "color": "#fcfcfc"
           },
@@ -1169,13 +551,7 @@
             "action": "장애 발견자는 ③ 유선 연락",
             "color": "#ffffff",
             "contacts": [
-              {
-                "no": "③",
-                "department": "의료정보2팀",
-                "name": "송하은 팀장",
-                "phone": "010-3863-0222",
-                "note": ""
-              }
+              { "no": "③", "department": "의료정보2팀", "name": "송하은 팀장", "phone": "010-3863-0222", "note": "" }
             ]
           }
         ]
@@ -1183,7 +559,7 @@
     ],
     "color": "#edf2ca"
    }
-   ];
+];
         }
             
         function saveDisasterData() {
